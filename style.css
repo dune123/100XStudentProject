@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .Navbar{
+    width:100vw;
+    height: 10vh;
+    padding:14px;
+    background-color: #000;
+    color:white;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.BodyContainer{
+    display: flex;
+    flex-direction: column;
+    background: #D9D9D9;
+    height: 90vh;
+    width:100vw;
+    gap:2vh;
+    padding-top:3vh;
+    padding-left: 2vw;
+}
+
+.BodyContainer .searchbar{
+    display: flex;
+    gap:1vw;
+}
+
+.searchbar input{
+    width:76vw;
+    height:9vh;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 1.4rem;
+    padding-left: 1.3vw;
+}
+
+.searchbar button{
+    width:18vw;
+    background-color: black;
+    color:white;
+    font-size: 1.2rem;
+}
+
+.sortingButtons{
+    display: flex;
+    justify-content: space-between;
+    width:95vw;
+}
+
+.sortingButtons button{
+    width:17vw;
+    height:8vh;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.studentContainer{
+    display: flex;
+    flex-direction: column;
+    width:95vw;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+
+.studentContainer table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: transparent;
+}
+
+th,td{
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444;
+}
+
+th {
+    font-weight: bold;
+}
+
+/*thead, tbody {
+    display: block; 
+}*/
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+tbody td img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
